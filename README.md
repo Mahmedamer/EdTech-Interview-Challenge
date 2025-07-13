@@ -279,6 +279,11 @@ The API provides comprehensive documentation through Swagger UI:
 
 ### API Endpoints Overview
 
+**Base URLs:**
+- HTTPS (Production): `https://localhost:7207` 
+- HTTP (Development): `http://localhost:5204`
+- Health Check: `/health` (available on both protocols)
+
 | Category | Endpoints | Description |
 |----------|-----------|-------------|
 | Authentication | `/api/v1.0/auth/*` | Login, logout, profile management |
@@ -355,7 +360,9 @@ The API provides comprehensive documentation through Swagger UI:
    ```
 
 6. **Access Swagger UI**
-   Navigate to `https://localhost:7000` (development)
+   Navigate to `https://localhost:7207` or `http://localhost:5204` (development)
+   - HTTPS (recommended): `https://localhost:7207`
+   - HTTP (alternative): `http://localhost:5204`
 
 ### Default Test Accounts
 
