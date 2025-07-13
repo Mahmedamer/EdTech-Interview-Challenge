@@ -415,7 +415,6 @@ if (rateLimitOptions.Enabled)
     logger.LogInformation("Rate Limit - Endpoint Rules: {EndpointCount} configured", rateLimitOptions.EndpointRules.Count);
     logger.LogInformation("Rate Limit - Whitelisted IPs: {IPCount}", rateLimitOptions.WhitelistedIPs.Count);
 }
-logger.LogInformation("Swagger UI available at: {BaseUrl}", app.Environment.IsDevelopment() ? "https://localhost:7207" : "Application root");
-logger.LogInformation("Rate Limit Management: {BaseUrl}/api/v1.0/ratelimit/configuration", app.Environment.IsDevelopment() ? "https://localhost:7207" : "Application root");
+logger.LogInformation("Swagger UI available at: {BaseUrl}", app.Environment.IsDevelopment() ? "http://localhost:5204" : "Application root");
 
 app.Run();
